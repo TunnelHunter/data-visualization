@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <title>智慧农业大数据可视化平台</title>
+    <link rel="stylesheet" href="../dist/css/main.min.css" />
+    <link rel="shortcut icon" href="../dist/images/favicon.ico" type="image/x-icon" />
+    <script>
+        /*if( window.localStorage.getItem("username") == ''
+                || window.localStorage.getItem("username") == null ){
+            window.location = 'iamp_login.html';
+        }*/
+    </script>
+    <link rel="stylesheet" href="../dist/css/indexless.css">
+</head>
+<body ng-app="myApp" style="background:#041a3a;height: 98%">
+<div class="topTOP" style="background-size:100% 100%">
+    <div class="top_bottom" ng-click="fn_go_pageList()">
+        <!--<div class="top_logo icon-logo" ng-click="fn_go_pageList()" style="cursor: pointer;" title="返回主菜单"></div>-->
+        <div class="top_title" style="cursor: pointer;padding-top: 10px;
+                margin-left: 30px;" title="返回主菜单">智慧农业大数据可视化平台</div>
+    </div>
+</div>
+<!--<div class="extend_menu hidden">-->
+
+    <!--<span  id="front_info" title="首页" ng-click="fn_common_goto(0)">-->
+        <!--<i class="icon-iamp_info_home"></i>-->
+    <!--</span>-->
+    <!--<span id="front_orders" ng-click="fn_common_goto(1)" title="统计报表" ng-style="show_helper"  >-->
+        <!--<i class="icon-iamp_info_baobiao"></i>-->
+    <!--</span>-->
+    <!--<span id="front_dataCompare" title="数据分析" ng-click="fn_common_goto(2)" >-->
+        <!--<i class="icon-iamp_info_dataAnalysis"></i>-->
+    <!--</span>-->
+    <!--<span id="front_qualityTrance" title="质量追溯" ng-click="fn_common_goto(3)">-->
+        <!--<i class="icon-iamp_info_zhuisu" style="height: 39px;"></i>-->
+    <!--</span>-->
+    <!--<span id="front_login" title="用户登录" ng-click="fn_common_goto(4)" >-->
+        <!--<i class="icon-user_pic"></i>-->
+    <!--</span>-->
+
+<!--</div>-->
+<div class="fixed_right" style="margin:0;">
+    <div ng-view ></div>
+</div>
+
+<common-load do="var_common_waitingDivShow" ng-show="var_common_waitingDivShow"></common-load>
+
+<common-showalerttxtbox alert-txt ="{{ var_common_alertTxt }}"
+                        btn-show-num = "btn_show_num"
+                        confirm-btn = "confirm_btn_var"
+                        do="var_common_showAlertTxtbox"
+                        ng-show="var_common_showAlertTxtbox"></common-showalerttxtbox>
+
+</body>
+
+<script type="text/javascript" src="../dist/js/angular_and_angular-router.js"></script>
+<script type="text/javascript" src="../dist/js/data_show/dataShowIndexConcatJs.min.js"></script>
+<script type="text/javascript" src="../dist/js/echarts.min.js"></script>
+<!--的有它，info 才能显示中国地图-->
+<script type="text/javascript" src="../dist/js/china.js"></script>
+</html>

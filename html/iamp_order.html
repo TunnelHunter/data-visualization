@@ -1,0 +1,501 @@
+<!--<div class="info" style="background:none;margin-top:90px;">-->
+
+    <!--<div class="common_div3 common_threeBtn">-->
+
+        <!--<div class="iamp_common_border">-->
+            <!--<div id="product_curve"></div>-->
+        <!--</div>-->
+
+        <!--<div class="order_title">采购任务统计</div>-->
+
+        <!--<div class="common_div_box">-->
+            <!--<div class="common_div4 common_threeBtn">-->
+                    <!--<span class="active"-->
+                          <!--ng-click="fn_choose_alterActuator_type(0);">任务</span>-->
+            <!--</div>-->
+            <!--<div class="common_div4 common_threeBtn">-->
+                    <!--<span ng-class="choose_alterActuator_type == 1?'active':''"-->
+                          <!--ng-click="fn_choose_alterActuator_type(1);">概况</span>-->
+            <!--</div>-->
+
+        <!--</div>-->
+
+        <!--<table class="iamp_common_table">-->
+            <!--<tr>-->
+                <!--<th>单号</th>-->
+                <!--<th>种植品种</th>-->
+                <!--<th>种植时间</th>-->
+                <!--<th>需采购物资</th>-->
+                <!--<th>物资到货时间</th>-->
+            <!--</tr>-->
+            <!--<tr ng-repeat="list in purch_arr">-->
+                <!--<td>{{ list.orderNo }}</td>-->
+                <!--<td>{{ list.orderType }}</td>-->
+                <!--<td>{{ list.plantStatus }}</td>-->
+                <!--<td>{{ list.orderGood }}</td>-->
+                <!--<td>{{ list.goodArrTime }}</td>-->
+            <!--</tr>-->
+        <!--</table>-->
+
+    <!--</div>-->
+    <!--<div class="common_div3 common_threeBtn">-->
+
+        <!--<div class="order_top" id="order_top">-->
+
+            <!--<div class="order_title">订单</div>-->
+
+            <!--<div class="common_div3 common_threeBtn">-->
+                <!--<div ng-class="choose_alterActuator_type == 2?'active':''"-->
+                     <!--ng-click="fn_choose_alterActuator_type(2);">-->
+                    <!--● 中粮智慧农场-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="common_div3 common_threeBtn">-->
+                <!--<div ng-class="choose_alterActuator_type == 2?'active':''"-->
+                     <!--ng-click="fn_choose_alterActuator_type(2);">-->
+                    <!--● 国家农业科技展示园-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="common_div3 common_threeBtn">-->
+                <!--<div ng-class="choose_alterActuator_type == 2?'active':''"-->
+                     <!--ng-click="fn_choose_alterActuator_type(2);">-->
+                    <!--● 东营一期-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div style="height: 80px;"></div>-->
+            <!--<div class="common_div2 common_threeBtn">-->
+                <!--<div class="common_border_radius" ng-class="choose_alterActuator_type == 2?'active':''"-->
+                     <!--ng-click="fn_choose_alterActuator_type(2);" style="width:170px;height:170px;">-->
+                    <!--<div style="margin-top:55px;">234</div>-->
+                    <!--<div>播种期</div>-->
+                <!--</div>-->
+
+                <!--<div style="font-size:18px;margin-top:50px;">生产计划管理</div>-->
+
+            <!--</div>-->
+            <!--<div class="common_div2 common_threeBtn">-->
+                <!--<div class="common_border_radius" ng-class="choose_alterActuator_type == 2?'active':''"-->
+                     <!--ng-click="fn_choose_alterActuator_type(2);" style="width:170px;height:170px;">-->
+                    <!--<div style="margin-top:55px;">234</div>-->
+                    <!--<div>育苗器</div>-->
+                <!--</div>-->
+                <!--<div style="font-size:18px;margin-top:50px;">采购计划管理</div>-->
+            <!--</div>-->
+
+        <!--</div>-->
+
+        <!--<div id="order_bottom" style="margin:0 auto;">-->
+
+            <!--<div class="order_title">生产任务统计</div>-->
+            <!--<div class="common_div_box">-->
+                <!--<div class="common_div4 common_threeBtn">-->
+                    <!--<span class="active"-->
+                          <!--ng-click="fn_choose_alterActuator_type(0);">果菜</span>-->
+                <!--</div>-->
+                <!--<div class="common_div4 common_threeBtn">-->
+                    <!--<span ng-class="choose_alterActuator_type == 1?'active':''"-->
+                          <!--ng-click="fn_choose_alterActuator_type(1);">叶菜</span>-->
+                <!--</div>-->
+
+                <!--<div class="common_div4 common_threeBtn">-->
+                    <!--<span ng-class="choose_alterActuator_type == 1?'active':''"-->
+                          <!--ng-click="fn_choose_alterActuator_type(1);">食用菌</span>-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash;<div class="common_div4 common_threeBtn">-->
+                        <!--<span ng-class="choose_alterActuator_type == 2?'active':''"-->
+                              <!--ng-click="fn_choose_alterActuator_type(2);"></span>-->
+                <!--</div>&ndash;&gt;-->
+
+            <!--</div>-->
+
+            <!--<div style="height:100px;">-->
+                <!--<div class="common_div5 common_threeBtn">-->
+                    <!--<div class="common_border_radius common_border_radius_active"-->
+                         <!--ng-class="choose_alterActuator_type == 2?'active':''"-->
+                         <!--ng-click="fn_choose_alterActuator_type(2);">-->
+                        <!--<div>234</div>-->
+                        <!--<div>播种期</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="common_div5 common_threeBtn">-->
+                    <!--<div class="common_border_radius" ng-class="choose_alterActuator_type == 2?'active':''"-->
+                         <!--ng-click="fn_choose_alterActuator_type(2);">-->
+                        <!--<div>234</div>-->
+                        <!--<div>育苗器</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="common_div5 common_threeBtn">-->
+                    <!--<div class="common_border_radius" ng-class="choose_alterActuator_type == 2?'active':''"-->
+                         <!--ng-click="fn_choose_alterActuator_type(2);">-->
+                        <!--<div>234</div>-->
+                        <!--<div>定植期</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="common_div5 common_threeBtn">-->
+                    <!--<div class="common_border_radius" ng-class="choose_alterActuator_type == 2?'active':''"-->
+                         <!--ng-click="fn_choose_alterActuator_type(2);">-->
+                        <!--<div>234</div>-->
+                        <!--<div>生长期</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="common_div5 common_threeBtn">-->
+                    <!--<div class="common_border_radius" ng-class="choose_alterActuator_type == 2?'active':''"-->
+                         <!--ng-click="fn_choose_alterActuator_type(2);">-->
+                        <!--<div>234</div>-->
+                        <!--<div>连续结果期</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+            <!--</div>-->
+            <!--<table class="iamp_common_table">-->
+                <!--<tr>-->
+                    <!--<th>单号</th>-->
+                    <!--<th>种植品种</th>-->
+                    <!--<th>开始种植时间</th>-->
+                    <!--<th>播种时间</th>-->
+                    <!--<th>种植区域</th>-->
+                <!--</tr>-->
+                <!--<tr ng-repeat="list in product_arr1">-->
+                    <!--<td>{{ list.orderNo }}</td>-->
+                    <!--<td>{{ list.orderType }}</td>-->
+                    <!--<td>{{ list.plantTime }}</td>-->
+                    <!--<td>{{ list.seedingTime }}</td>-->
+                    <!--<td>{{ list.plantArea }}</td>-->
+                <!--</tr>-->
+            <!--</table>-->
+
+        <!--</div>-->
+
+    <!--</div>-->
+
+    <!--<div class="common_div3 common_threeBtn">-->
+
+        <!--<div class="iamp_common_border" style="height:590px;">-->
+            <!--<div style="height:50px;"></div>-->
+            <!--<div id="labour_curve"></div>-->
+        <!--</div>-->
+
+        <!--<div class="order_title">劳动力统计</div>-->
+
+        <!--<table class="iamp_common_table">-->
+            <!--<tr>-->
+                <!--<th>工号</th>-->
+                <!--<th>姓名</th>-->
+                <!--<th>工作内容</th>-->
+                <!--<th>时间</th>-->
+                <!--<th>工作区域</th>-->
+                <!--<th>工作评分</th>-->
+            <!--</tr>-->
+            <!--<tr ng-repeat="list in labour_arr">-->
+                <!--<td>{{ list.labourNo }}</td>-->
+                <!--<td>{{ list.labourName }}</td>-->
+                <!--<td>{{ list.labourContent }}</td>-->
+                <!--<td>{{ list.labourTime }}</td>-->
+                <!--<td>{{ list.labourArea }}</td>-->
+                <!--<td>{{ list.labourScore }}</td>-->
+            <!--</tr>-->
+        <!--</table>-->
+    <!--</div>-->
+
+
+<!--</div>-->
+
+
+<div align="center" style="width: 31%;height: 44.5%;position:absolute;left: 1.5%;
+    top: 7%;background: rgba(255, 255, 255, .03);border-radius: 30px;">
+    <div class="block_div_title">
+        <div class="block_div_title_text">订单统计</div>
+    </div>
+
+    <div id="product_curve" style="position: relative;top: 1%;width: 100%;height: 89%;"></div>
+</div>
+
+<div align="center" style="width: 31%;height: 44.5%;position:absolute;right: 34.5%;
+    top: 7%;background: rgba(255, 255, 255, .03);border-radius: 30px;">
+    <div class="block_div_title">
+        <div class="block_div_title_text">园区订单</div>
+    </div>
+    <!--<div id="purch_quality" style="position: relative;top: 1%;width: 100%;height: 89%;"></div>-->
+
+    <!--<div class="common_div3 common_threeBtn">-->
+        <!--<div ng-class="choose_alterActuator_type == 2?'active':''"-->
+             <!--ng-click="fn_choose_alterActuator_type(2);">-->
+            <!--● 中粮智慧农场-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="common_div3 common_threeBtn">-->
+        <!--<div ng-class="choose_alterActuator_type == 2?'active':''"-->
+             <!--ng-click="fn_choose_alterActuator_type(2);">-->
+            <!--● 国家农业科技展示园-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="common_div3 common_threeBtn">-->
+        <!--<div ng-class="choose_alterActuator_type == 2?'active':''"-->
+             <!--ng-click="fn_choose_alterActuator_type(2);">-->
+            <!--● 东营一期-->
+        <!--</div>-->
+    <!--</div>-->
+    <div style="height: 5%;"></div>
+    <div class="common_div2 common_threeBtn" style="position: absolute;
+    left: 8%;">
+        <div class="common_border_radius order_page_circle_size" ng-class="choose_alterActuator_type == 2?'active':''"
+             ng-click="fn_choose_alterActuator_type(2);" style="color: #ffffffbf;">
+            <div class="order_page_circle_number">159</div>
+            <div class="order_page_circlre_font">播种期</div>
+        </div>
+    </div>
+    <div class="common_div2 common_threeBtn" style="position: absolute;
+    right: 8%;">
+        <div class="common_border_radius order_page_circle_size" ng-class="choose_alterActuator_type == 2?'active':''"
+             ng-click="fn_choose_alterActuator_type(2);" style="color: #ffffffbf;">
+            <div class="order_page_circle_number">234</div>
+            <div class="order_page_circlre_font">育苗期</div>
+        </div>
+    </div>
+    <div class="common_div2 common_threeBtn" style="position: absolute;
+    top: 58%;left:-7%">
+        <div class="common_border_radius order_page_circle_size" ng-class="choose_alterActuator_type == 2?'active':''"
+             ng-click="fn_choose_alterActuator_type(2);" style="color: #ffffffbf;">
+            <div class="order_page_circle_number">356</div>
+            <div class="order_page_circlre_font">定植期</div>
+        </div>
+    </div>
+    <div class="common_div2 common_threeBtn" style="position: absolute;
+    top: 58%;left: 25%;">
+        <div class="common_border_radius order_page_circle_size" ng-class="choose_alterActuator_type == 2?'active':''"
+             ng-click="fn_choose_alterActuator_type(2);" style="color: #ffffffbf;">
+            <div class="order_page_circle_number">245</div>
+            <div class="order_page_circlre_font">生长期</div>
+        </div>
+    </div>
+    <div class="common_div2 common_threeBtn" style="position: absolute;
+    top: 58%;right: -7%;">
+        <div class="common_border_radius order_page_circle_size" ng-class="choose_alterActuator_type == 2?'active':''"
+             ng-click="fn_choose_alterActuator_type(2);" style="color: #ffffffbf;">
+            <div class="order_page_circle_number">576</div>
+            <div class="order_page_circlre_font">连续结果期</div>
+        </div>
+    </div>
+
+</div>
+
+
+<div align="center" style="width: 31%;height: 44.5%;position:absolute;right: 1.5%;
+    top: 7%;background: rgba(255, 255, 255, .03);border-radius: 30px;">
+    <div class="block_div_title">
+        <div class="block_div_title_text">劳动用工量</div>
+    </div>
+
+    <div id="labour_curve" style="position: relative;top: 1%;width: 100%;height: 89%;right: 1%;"></div>
+</div>
+
+<div align="center" style="width: 31%;
+    height: 44.5%;
+    position: absolute;
+    left: 1.5%;
+    top: 54%;
+    background: rgba(255, 255, 255, .03);
+    border-radius: 30px;">
+    <div class="block_div_title">
+        <div class="block_div_title_text">采购任务统计</div>
+    </div>
+    <table class="hovertable_one" style="width: 100%;height: 89.5%;" frame=void>
+
+        <!--<div class="common_div_box">-->
+            <!--<div class="common_div4 common_threeBtn">-->
+                    <!--<span class="active"-->
+                          <!--ng-click="fn_choose_alterActuator_type(0);">任务</span>-->
+            <!--</div>-->
+            <!--<div class="common_div4 common_threeBtn">-->
+                    <!--<span ng-class="choose_alterActuator_type == 1?'active':''"-->
+                          <!--ng-click="fn_choose_alterActuator_type(1);">概况</span>-->
+            <!--</div>-->
+
+        <!--</div>-->
+        <!---->
+        <tr style="height: 10%;">
+            <th>单号</th>
+            <th style="width: 15%;">种植品种</th>
+            <th>种植时间</th>
+            <th style="width: 13%;">需采购物资</th>
+            <th style="width: 24%;">物资到货时间</th>
+        </tr>
+        <tr ng-repeat="list in purch_arr" onmouseenter="style='background:rgba(52, 132, 208, 0.85)'"
+            onmouseleave="style=' background: linear-gradient(to left,  #3174bd, #30a8a3)'">
+            <td>{{ list.orderNo }}</td>
+            <td>{{ list.orderType }}</td>
+            <td>{{ list.plantStatus }}</td>
+            <td>{{ list.orderGood }}</td>
+            <td>{{ list.goodArrTime }}</td>
+        </tr>
+        <tr style="border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;"
+            onmouseenter="style='background:rgba(52, 132, 208, 0.85)'"
+            onmouseleave="style='background: linear-gradient(to left,  #3174bd, #30a8a3)'">
+            <td style="border-bottom-left-radius: 30px;">AG172501T</td>
+            <td>番茄</td>
+            <td>2017.06.22</td>
+            <td>主仓库</td>
+            <td style="border-bottom-right-radius: 30px;">付翰</td>
+        </tr>
+
+
+    </table>
+</div>
+
+<div align="center" style="width: 31%;
+    height: 44.5%;
+    position: absolute;
+    right: 34.5%;
+    top: 54%;
+    background: rgba(255, 255, 255, .03);
+    border-radius: 30px;">
+    <div class="block_div_title">
+        <div class="block_div_title_text">生产任务统计</div>
+    </div>
+    <table class="hovertable_one" style="width: 100%;height: 89.5%;" frame=void>
+
+
+        <!--<div class="common_div_box">-->
+            <!--<div class="common_div4 common_threeBtn">-->
+                    <!--<span class="active"-->
+                          <!--ng-click="fn_choose_alterActuator_type(0);">果菜</span>-->
+            <!--</div>-->
+            <!--<div class="common_div4 common_threeBtn">-->
+                    <!--<span ng-class="choose_alterActuator_type == 1?'active':''"-->
+                          <!--ng-click="fn_choose_alterActuator_type(1);">叶菜</span>-->
+            <!--</div>-->
+
+            <!--<div class="common_div4 common_threeBtn">-->
+                    <!--<span ng-class="choose_alterActuator_type == 1?'active':''"-->
+                          <!--ng-click="fn_choose_alterActuator_type(1);">食用菌</span>-->
+            <!--</div>-->
+
+            <!--&lt;!&ndash;<div class="common_div4 common_threeBtn">-->
+                    <!--<span ng-class="choose_alterActuator_type == 2?'active':''"-->
+                          <!--ng-click="fn_choose_alterActuator_type(2);"></span>-->
+            <!--</div>&ndash;&gt;-->
+
+        <!--</div>-->
+
+        <!--<div style="height:100px;">-->
+            <!--<div class="common_div5 common_threeBtn">-->
+                <!--<div class="common_border_radius common_border_radius_active"-->
+                     <!--ng-class="choose_alterActuator_type == 2?'active':''"-->
+                     <!--ng-click="fn_choose_alterActuator_type(2);">-->
+                    <!--<div>234</div>-->
+                    <!--<div>播种期</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="common_div5 common_threeBtn">-->
+                <!--<div class="common_border_radius" ng-class="choose_alterActuator_type == 2?'active':''"-->
+                     <!--ng-click="fn_choose_alterActuator_type(2);">-->
+                    <!--<div>234</div>-->
+                    <!--<div>育苗器</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="common_div5 common_threeBtn">-->
+                <!--<div class="common_border_radius" ng-class="choose_alterActuator_type == 2?'active':''"-->
+                     <!--ng-click="fn_choose_alterActuator_type(2);">-->
+                    <!--<div>234</div>-->
+                    <!--<div>定植期</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="common_div5 common_threeBtn">-->
+                <!--<div class="common_border_radius" ng-class="choose_alterActuator_type == 2?'active':''"-->
+                     <!--ng-click="fn_choose_alterActuator_type(2);">-->
+                    <!--<div>234</div>-->
+                    <!--<div>生长期</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="common_div5 common_threeBtn">-->
+                <!--<div class="common_border_radius" ng-class="choose_alterActuator_type == 2?'active':''"-->
+                     <!--ng-click="fn_choose_alterActuator_type(2);">-->
+                    <!--<div>234</div>-->
+                    <!--<div>连续结果期</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        <!--</div>-->
+
+        <tr style="height: 10%;">
+            <th style="width: 20%;">单号</th>
+            <th style="width: 11%;">种植品种</th>
+            <th style="width: 16%;">开始种植时间</th>
+            <th>播种时间</th>
+            <th style="width: 13%;">种植区域</th>
+        </tr>
+        <tr ng-repeat="list in product_arr1" onmouseenter="style='background:rgba(52, 132, 208, 0.85)'"
+            onmouseleave="style=' background: linear-gradient(to left,  #3174bd, #30a8a3)'">
+            <td>{{ list.orderNo }}</td>
+            <td>{{ list.orderType }}</td>
+            <td>{{ list.plantTime }}</td>
+            <td>{{ list.seedingTime }}</td>
+            <td>{{ list.plantArea }}</td>
+        </tr>
+        <tr style="border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;"
+            onmouseenter="style='background:rgba(52, 132, 208, 0.85)'"
+            onmouseleave="style='background: linear-gradient(to left,  #3174bd, #30a8a3)'">
+            <td style="border-bottom-left-radius: 30px;">AG172103V</td>
+            <td>奶油生菜</td>
+            <td>2017.04.24</td>
+            <td>农业部蔬菜品质监督检查测试中心（北京）</td>
+            <td style="border-bottom-right-radius: 30px;">付翰</td>
+        </tr>
+
+
+    </table>
+</div>
+
+
+<div align="center" style="width: 31%;
+    height: 44.5%;
+    position: absolute;
+    right: 1.5%;
+    top: 54%;
+    background: rgba(255, 255, 255, .03);
+    border-radius: 30px;">
+    <div class="block_div_title">
+        <div class="block_div_title_text">劳动力统计</div>
+    </div>
+    <table class="hovertable_one" style="width: 100%;height: 89.5%;" frame=void>
+        <tr style="height: 10%;">
+            <th>工号</th>
+            <th style="width: 15%;">姓名</th>
+            <th>工作内容</th>
+            <th style="width: 18%;">时间</th>
+            <th style="width: 15%;">工作区域</th>
+            <th style="width: 13%;">工作评分</th>
+        </tr>
+        <tr ng-repeat="list in labour_arr" onmouseenter="style='background:rgba(52, 132, 208, 0.85)'"
+            onmouseleave="style=' background: linear-gradient(to left,  #3174bd, #30a8a3)'">
+            <td>{{ list.labourNo }}</td>
+            <td>{{ list.labourName }}</td>
+            <td>{{ list.labourContent }}</td>
+            <td>{{ list.labourTime }}</td>
+            <td>{{ list.labourArea }}</td>
+            <td>{{ list.labourScore }}</td>
+        </tr>
+        <tr style="border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;"
+            onmouseenter="style='background:rgba(52, 132, 208, 0.85)'"
+            onmouseleave="style='background: linear-gradient(to left, #3174bd, #30a8a3)'">
+            <td style="border-bottom-left-radius: 30px;">AG172501T</td>
+            <td>番茄</td>
+            <td>2017.06.22</td>
+            <td>主仓库</td>
+            <td>12℃</td>
+            <td style="border-bottom-right-radius: 30px;">塑料</td>
+        </tr>
+
+
+    </table>
+</div>
+</div>

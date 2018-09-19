@@ -1,0 +1,54 @@
+<div class="info">
+
+    <div id="powers_sankey_wrapper" align="center" style="width: 65%;height: 91.5%;position: absolute;left: 1.5%;top: 7%;background: rgba(255, 255, 255, .03);
+    border-radius: 30px;">
+        <div class="block_div_title" style="height: 5.45%;">
+            <div class="block_div_title_text">园区分布图</div>
+        </div>
+        <div id="earth" style="width: 100%;height: 97%;position: relative;top:-2%"></div>
+    </div>
+
+
+    <div id="radar_wrapper" align="center" style="width: 30.5%;height: 44.5%;position: absolute;right: 1.5%;
+    top: 7%;
+    background: rgba(255, 255, 255, .03);
+    border-radius: 30px;">
+        <div class="block_div_title">
+            <div class="block_div_title_text">雷达图</div>
+        </div>
+        <div id="radar" style="width: 90%;height: 90%;position: relative;top:-1%;left: -2.5%;" ></div>
+    </div>
+
+
+    <div id="table_wrapper" align="center" style="width: 30.5%;
+    height: 44.5%;
+    position: absolute;
+    right: 1.5%;
+    top: 54%;
+    background: rgba(255, 255, 255, .03);
+    border-radius: 30px;">
+        <div class="block_div_title">
+            <div class="block_div_title_text">园区概况</div>
+        </div>
+
+        <table class="hovertable_two" style="width: 100%;height: 89.5%;" frame=void>
+            <tr>
+                <th style="width:22%">时间</th>
+                <th>地区</th>
+                <th>详情</th>
+            </tr>
+            <tr ng-repeat="list in arr3" onmouseenter="style='background:rgba(2, 128, 144, 0.7)'" onmouseleave="style=' background: linear-gradient(to left, rgba(2, 195, 154, 0.8), #028090)'">
+                <td>{{ list.time }}</td>
+                <td>{{ list.area }}</td>
+                <td>{{ list.detail }}</td>
+            </tr>
+            <tr style="border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;" onmouseenter="style='background:rgba(2, 128, 144, 0.7)'" onmouseleave="style='background: linear-gradient(to left, rgba(2, 195, 154, 0.8), #028090)'">
+                <td style="border-bottom-left-radius: 30px;">2017.06.30</td>
+                <td>中粮智慧农场</td>
+                <td style="border-bottom-right-radius: 30px;">食用菌工厂运行正常</td>
+            </tr>
+
+        </table>
+    </div>
+
+</div>

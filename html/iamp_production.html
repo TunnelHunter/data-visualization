@@ -1,0 +1,34 @@
+<div class="info">
+    <div id="N_fertilizer_bar_wrapper" align="center" style="width: 47.8%;height: 91.5%;position:absolute;left: 1.5%;
+    top: 7%;background: rgba(255, 255, 255, .03);border-radius: 30px;">
+        <div class="block_div_title" style="height: 5.45%;">
+            <div class="block_div_title_text">园区生产</div>
+        </div>
+
+        <div ng-show="show_production_bar1" id="production_bar1" style="position: relative;top: 1%;width: 100%;height: 93%;"></div>
+        <div ng-show="show_production_bar2" id="production_bar2" style="position: relative;top: 1%;width: 100%;height: 93%;"></div>
+        <div ng-class="show_production_bar1?'production_common_left_div_button1_true':'production_common_left_div_button1_false'" ng-click="show_production_bar1 = true;show_production_bar2 = false">
+            <div style="    padding: 3px;">国家农业科技展示园</div>
+        </div>
+        <div ng-class="show_production_bar2?'production_common_left_div_button2_true':'production_common_left_div_button2_false'" ng-click="show_production_bar1 = false;show_production_bar2 = true">
+            <div style="    padding: 3px;">中粮智慧农场</div>
+        </div>
+    </div>
+
+
+    <div id="P_fertilizer_bar_wrapper" align="center" style="width: 47.8%;height:91.5%;position:absolute;right: 1.5%;
+    top:7%;background: rgba(255, 255, 255, .03);border-radius: 30px;">
+        <div class="block_div_title" style="height: 5.45%;">
+            <div class="block_div_title_text">园区生产</div>
+        </div>
+        <div ng-show="show_production_bar3" id="production_bar3" style="position: relative;top: 1%;width: 100%;height: 93%;"></div>
+        <div ng-show="show_production_bar4" id="production_bar4" style="position: relative;top: 1%;width: 100%;height: 93%;"></div>
+        <div ng-class="show_production_bar3?'production_common_right_div_button1_true':'production_common_right_div_button1_false'" ng-click="show_production_bar3 = true;show_production_bar4 = false">
+            <div style="    padding: 3px;">东营一期</div>
+        </div>
+        <div ng-class="show_production_bar4?'production_common_right_div_button2_true':'production_common_right_div_button2_false'" ng-click="show_production_bar3 = false;show_production_bar4 = true">
+            <div style="    padding: 3px;">贵州园区</div>
+        </div>
+    </div>
+
+</div>

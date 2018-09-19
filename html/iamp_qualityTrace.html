@@ -1,0 +1,286 @@
+<!--<div class="info" style="background:none;margin-top:90px;">-->
+
+    <!--<div class="common_div3 common_threeBtn">-->
+        <!--<div class="iamp_common_border">-->
+            <!--<div style="height: 70px;"></div>-->
+            <!--<div id="storage_quality_radar"></div>-->
+        <!--</div>-->
+
+        <!--<div class="order_title">-->
+            <!--库存详情-->
+        <!--</div>-->
+        <!--<table class="iamp_common_table">-->
+            <!--<tr>-->
+                <!--<th>批次号</th>-->
+                <!--<th>产品名</th>-->
+                <!--<th>在库时间</th>-->
+                <!--<th>位置</th>-->
+                <!--<th>温度</th>-->
+                <!--<th>湿度</th>-->
+                <!--<th>包装方式</th>-->
+            <!--</tr>-->
+            <!--<tr ng-repeat="list in storage_quality_arr">-->
+                <!--<td>{{ list.checkNo }}</td>-->
+                <!--<td>{{ list.checkName }}</td>-->
+                <!--<td>{{ list.storageTime }}</td>-->
+                <!--<td>{{ list.storagePosition }}</td>-->
+                <!--<td>{{ list.storageTemp }}</td>-->
+                <!--<td>{{ list.storageHumidity }}</td>-->
+                <!--<td>{{ list.PackingWay }}</td>-->
+            <!--</tr>-->
+        <!--</table>-->
+    <!--</div>-->
+    <!--<div class="common_div3 common_threeBtn">-->
+
+        <!--<div id="purch_quality_wrapper" class="iamp_common_border"-->
+             <!--style="margin:0 auto;height: 660px;width:95%">-->
+
+            <!--<div style="height:90px;"></div>-->
+            <!--<div id="purch_quality"></div>-->
+
+            <!--&lt;!&ndash;这个位置默认双向数据绑定的是value属性&ndash;&gt;-->
+            <!--<select id="alter_factoryType" class="common_select" style="position: absolute;    top: 36px;-->
+    <!--right: 20px;">-->
+                <!--&lt;!&ndash;<option  value="{{ list.factory_type_id }}" ng-repeat="list in arr_factoryType">-->
+                    <!--{{ list.factory_type_name }}-->
+                <!--</option>&ndash;&gt;-->
+                <!--<option value="高锰酸钾">高锰酸钾</option>-->
+                <!--<option value="硝酸钾">硝酸钾</option>-->
+                <!--<option value="硝酸钙">硝酸钙</option>-->
+                <!--<option value="硝酸铵钙">硝酸铵钙</option>-->
+                <!--<option value="硫酸镁">硫酸镁</option>-->
+                <!--<option value="磷酸二氢铵">磷酸二氢铵</option>-->
+                <!--<option value="磷酸二氢钾">磷酸二氢钾</option>-->
+            <!--</select>-->
+
+            <!--<div style="position: absolute;top:40px;left: 20px;">-->
+                <!--<span style="color: yellow;border-bottom: 2px solid yellow;"> 详情 </span>-->
+                <!--<span> 概况 </span>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div style="margin:0 10px;">-->
+            <!--<div class="order_title">果蔬送检报告</div>-->
+
+            <!--<table class="iamp_common_table">-->
+                <!--<tr>-->
+                    <!--<th>批次号</th>-->
+                    <!--<th>产品名</th>-->
+                    <!--<th>送检时间</th>-->
+                    <!--<th>检验机构</th>-->
+                    <!--<th>检验结果</th>-->
+                    <!--<th>送检人</th>-->
+                <!--</tr>-->
+                <!--<tr ng-repeat="list in check_arr">-->
+                    <!--<td style="cursor: pointer;" ng-click="fn_show_layer(list.checkPhoto)">{{ list.checkNo }}</td>-->
+                    <!--<td>{{ list.checkName }}</td>-->
+                    <!--<td>{{ list.checkDate }}</td>-->
+                    <!--<td>{{ list.checkMechanism }}</td>-->
+                    <!--<td>{{ list.checkResult }}</td>-->
+                    <!--<td>{{ list.checkUserName }}</td>-->
+                <!--</tr>-->
+            <!--</table>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+    <!--<div class="common_div3 common_threeBtn">-->
+
+        <!--<div class="iamp_common_border" style="height: 660px;">-->
+            <!--<div style="height: 70px;"></div>-->
+            <!--<div id="product_quality"></div>-->
+        <!--</div>-->
+
+        <!--<div class="order_title">库存详情</div>-->
+
+        <!--<table class="iamp_common_table">-->
+            <!--<tr>-->
+                <!--<th>批次号</th>-->
+                <!--<th>产品名</th>-->
+                <!--<th>在库时间</th>-->
+                <!--<th>位置</th>-->
+                <!--<th>温度</th>-->
+                <!--<th>湿度</th>-->
+                <!--<th>包装方式</th>-->
+            <!--</tr>-->
+            <!--<tr ng-repeat="list in storage_quality_arr">-->
+                <!--<td>{{ list.checkNo }}</td>-->
+                <!--<td>{{ list.checkName }}</td>-->
+                <!--<td>{{ list.storageTime }}</td>-->
+                <!--<td>{{ list.storagePosition }}</td>-->
+                <!--<td>{{ list.storageTemp }}</td>-->
+                <!--<td>{{ list.storageHumidity }}</td>-->
+                <!--<td>{{ list.PackingWay }}</td>-->
+            <!--</tr>-->
+        <!--</table>-->
+    <!--</div>-->
+
+
+<!--</div>-->
+
+
+<div class="info">
+    <!--<div align="center" style="width: 97%;height: 44.5%;position:absolute;left: 1.5%;-->
+    <!--top: 7%;background: rgba(255, 255, 255, .03);border-radius: 30px;">-->
+        <!--<div style="height: 50px;-->
+    <!--background: rgba(255, 255, 255, .08);border-top-left-radius: 30px;-->
+    <!--border-top-right-radius: 30px;">-->
+            <!--<div style="top: 10px; position: relative;font-size: 1.7em;font-weight: bold;color: #ffffffa3;">室外环境</div>-->
+        <!--</div>-->
+        <!--<div id="N_fertilizer_bar" style="position: relative;top: 1%;width: 101%;height: 86%;"></div>-->
+    <!--</div>-->
+
+    <div align="center" style="width: 31%;height: 44.5%;position:absolute;left: 1.5%;
+    top: 7%;background: rgba(255, 255, 255, .03);border-radius: 30px;">
+        <div class="block_div_title">
+            <div class="block_div_title_text">库存概况</div>
+        </div>
+
+        <div id="storage_quality_radar" style="position: relative;top: 1%;width: 100%;height: 89%;"></div>
+    </div>
+
+    <div align="center" style="width: 31%;height: 44.5%;position:absolute;right: 34.5%;
+    top: 7%;background: rgba(255, 255, 255, .03);border-radius: 30px;">
+        <div class="block_div_title">
+            <div class="block_div_title_text">化肥采购统计</div>
+        </div>
+        <div id="purch_quality" style="position: relative;top: 1%;width: 100%;height: 89%;"></div>
+    </div>
+
+
+    <div align="center" style="width: 31%;height: 44.5%;position:absolute;right: 1.5%;
+    top: 7%;background: rgba(255, 255, 255, .03);border-radius: 30px;">
+        <div class="block_div_title">
+            <div class="block_div_title_text">病虫害处理作业</div>
+        </div>
+
+        <div id="product_quality" style="position: relative;top: 3%;width: 100%;height: 100%;"></div>
+    </div>
+
+    <div align="center" style="width: 31%;
+    height: 44.5%;
+    position: absolute;
+    left: 1.5%;
+    top: 54%;
+    background: rgba(255, 255, 255, .03);
+    border-radius: 30px;">
+        <div class="block_div_title">
+            <div class="block_div_title_text">库存详情</div>
+        </div>
+        <table class="hovertable" style="width: 100%;height: 89.5%;" frame=void>
+            <tr style="height: 10%;">
+                <th >批次号</th>
+                <th style="width: 15%;">产品名</th>
+                <th >在库时间</th>
+                <th style="width: 13%;">位置</th>
+                <th style="width: 10%;">温度</th>
+                <th style="width: 13%;">湿度</th>
+                <th style="width: 10%;">包装方式</th>
+            </tr>
+            <tr ng-repeat="list in storage_quality_arr" onmouseenter="style='background:#6554a3'" onmouseleave="style=' background: linear-gradient(to left,#8868ce, #a461e2)'">
+                <td>{{ list.checkNo }}</td>
+                <td>{{ list.checkName }}</td>
+                <td>{{ list.storageTime }}</td>
+                <td>{{ list.storagePosition }}</td>
+                <td>{{ list.storageTemp }}</td>
+                <td>{{ list.storageHumidity }}</td>
+                <td>{{ list.PackingWay }}</td>
+            </tr>
+            <tr style="border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;" onmouseenter="style='background:#6554a3'" onmouseleave="style='background: linear-gradient(to left,#8868ce, #a461e2)'">
+                <td style="border-bottom-left-radius: 30px;">AG172501T</td>
+                <td>番茄</td>
+                <td>2017.06.22</td>
+                <td>主仓库</td>
+                <td>12℃</td>
+                <td>80%RH</td>
+                <td style="border-bottom-right-radius: 30px;">塑料</td>
+            </tr>
+
+
+        </table>
+    </div>
+
+    <div align="center" style="width: 31%;
+    height: 44.5%;
+    position: absolute;
+    right: 34.5%;
+    top: 54%;
+    background: rgba(255, 255, 255, .03);
+    border-radius: 30px;">
+        <div class="block_div_title">
+            <div class="block_div_title_text">果蔬送检报告</div>
+        </div>
+        <table class="hovertable" style="width: 100%;height: 89.5%;" frame=void>
+            <tr style="height: 10%;">
+                <th style="width: 20%;">批次号</th>
+                <th style="width: 11%;">产品名</th>
+                <th style="width: 16%;">送检时间</th>
+                <th>检验机构</th>
+                <th style="width: 10%;">检验结果</th>
+                <th style="width: 10%;">湿度</th>
+            </tr>
+            <tr ng-repeat="list in check_arr" onmouseenter="style='background:#6554a3'" onmouseleave="style=' background: linear-gradient(to left, #8868ce, #a461e2)'">
+                <td>{{ list.checkNo }}</td>
+                <td>{{ list.checkName }}</td>
+                <td>{{ list.checkDate }}</td>
+                <td>{{ list.checkMechanism }}</td>
+                <td>{{ list.checkResult }}</td>
+                <td>{{ list.checkUserName }}</td>
+            </tr>
+            <tr style="border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;" onmouseenter="style='background:#6554a3'" onmouseleave="style='background: linear-gradient(to left,#8868ce, #a461e2)'">
+                <td style="border-bottom-left-radius: 30px;">AG172103V</td>
+                <td>奶油生菜</td>
+                <td>2017.04.24</td>
+                <td>农业部蔬菜品质监督检查测试中心（北京）</td>
+                <td>合格</td>
+                <td style="border-bottom-right-radius: 30px;">付翰</td>
+            </tr>
+
+
+        </table>
+    </div>
+
+
+    <div align="center" style="width: 31%;
+    height: 44.5%;
+    position: absolute;
+    right: 1.5%;
+    top: 54%;
+    background: rgba(255, 255, 255, .03);
+    border-radius: 30px;">
+        <div class="block_div_title">
+            <div class="block_div_title_text">库存详情</div>
+        </div>
+        <table class="hovertable" style="width: 100%;height: 89.5%;" frame=void>
+            <tr style="height: 10%;">
+                <th >批次号</th>
+                <th style="width: 15%;">产品名</th>
+                <th >在库时间</th>
+                <th style="width: 13%;">位置</th>
+                <th style="width: 10%;">温度</th>
+                <th style="width: 13%;">湿度</th>
+                <th style="width: 10%;">包装方式</th>
+            </tr>
+            <tr ng-repeat="list in storage_quality_arr" onmouseenter="style='background:#6554a3'" onmouseleave="style=' background: linear-gradient(to left, #8868ce, #a461e2)'">
+                <td>{{ list.checkNo }}</td>
+                <td>{{ list.checkName }}</td>
+                <td>{{ list.storageTime }}</td>
+                <td>{{ list.storagePosition }}</td>
+                <td>{{ list.storageTemp }}</td>
+                <td>{{ list.storageHumidity }}</td>
+                <td>{{ list.PackingWay }}</td>
+            </tr>
+            <tr style="border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;" onmouseenter="style='background:#6554a3'" onmouseleave="style='background: linear-gradient(to left, #8868ce, #a461e2)'">
+                <td style="border-bottom-left-radius: 30px;">AG172501T</td>
+                <td>番茄</td>
+                <td>2017.06.22</td>
+                <td>主仓库</td>
+                <td>12℃</td>
+                <td>80%RH</td>
+                <td style="border-bottom-right-radius: 30px;">塑料</td>
+            </tr>
+
+
+        </table>
+    </div>
+</div>
