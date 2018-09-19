@@ -20,5 +20,5 @@ A general solution for data visualization 数据可视化的通用解决方案
 
 <img src="https://ws3.sinaimg.cn/large/006tNbRwly1fvfb9ssenyj31kw0zk1kx.jpg" />
 
-<img src="https://ws3.sinaimg.cn/large/006tNbRwly1fvfb5or1apj31kw0zkwwn.jpg" />
+<img src="https://ws4.sinaimg.cn/large/006tNbRwly1fvfba9tkkoj31kw0zk1kx.jpg" />
 
